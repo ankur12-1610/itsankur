@@ -22,6 +22,9 @@ def myprojects(request):
                   template_name='myprojects.html',
                   context={"tutorials": Tutorial.objects.all})
 
+def about(request):
+    return render(request, 'about.html')
+
 @csrf_exempt
 def contact(request):
     #if post request came 

@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wc&ndgu8%6hz!_w#6motwfn_(z_csb$po78(b$m2sb)$=odu6r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['itsankurs.herokuapp.com']
+ALLOWED_HOSTS = ['itsankurs.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -70,6 +70,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'itsankur.wsgi.application'
+
+STATIC_HOST = 'd2zpeu9dhnzs5g.cloudfront.net' if not DEBUG else ''
+STATIC_URL = STATIC_HOST + '/static/'
+
 
 
 # Database
@@ -122,6 +126,9 @@ USE_TZ = True
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
