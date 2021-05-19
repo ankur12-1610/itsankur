@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<br><br>
+<!-- My Project-->
+ <section class="page-section portfolio" id="portfolio" style="background-color: white !important;">
+    <div class="container">
+        <!-- My Project Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Projects</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h5 style="font-weight: 400;"class="yo" class="lead">Here are a few webdev projects I've worked on recently. Want to see more? <a href = "mailto: anknerd.12@gmail.com">Email me</a>.</h5>
+        <!-- Portfolio Grid Items-->
+        <div style="padding-top: 50px;"class="row justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img  class="img-fluid" src="{% static 'assets\img\portfolio\todo.png' %}" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'assets\img\portfolio\history1.png' %}" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'assets\img\portfolio\historyext.png' %}" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                </div>
+            </div> -->
+            <!-- Portfolio Item 5-->
+            <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                </div>
+            </div> -->
+            <!-- Portfolio Item 6-->
+            <!-- <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                           
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Todo</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- My ProjectModal - Image-->
+                            <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." /> -->
+                            <!-- My ProjectModal - Text-->
+                            <p style="font-size: 25px;"class="mb-5"><a href="https://todoofficialsite.wordpress.com/" target="_blank">Todo</a> is a website which has the collection of paid apps, available to everyone at free of cost.</p>
+                            <!-- <button href="https://todoofficialsite.wordpress.com/" class="btn btn-xl btn-outline-dark" data-dismiss="modal">
+                                Visit Website
+                                <i class="fas fa-times fa-chevron-right"></i>
+                            </button> -->
+                            <a class="btn btn-xl btn-outline-dark" href="https://todoofficialsite.wordpress.com/" target="_blank">
+
+                                Visit Website
+                                <i class="fas fa-download fa-chevron-right"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- My ProjectModal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- My ProjectModal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">100 Year Story</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- My ProjectModal - Image -->
+                            <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/history1.png" alt="..." /> -->
+                            <!-- My ProjectModal - Text-->
+                            <p style="font-size: 25px;"class="mb-5">A webpage of Student Alumni Interaction Cell (SAIC), IIT BHU, which depicts the <a href="https://alumni.iitbhu.ac.in/history/" target="_blank">100 Year Story</a> of IIT BHU.</p>
+                            <!-- <button class="btn btn-primary" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button> -->
+                            <a class="btn btn-xl btn-outline-dark" href="https://alumni.iitbhu.ac.in/history/" target="_blank">
+                                Visit Website
+                                <i class="fas fa-download fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- My ProjectModal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- My ProjectModal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">100 Year : Gallery</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- My ProjectModal - Image-->
+                            <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." /> -->
+                            <!-- My ProjectModal - Text-->
+                            <p style="font-size: 25px;" class="mb-5"><a href="https://alumni.iitbhu.ac.in/history1/" target="_blank" >100 Year : Gallery</a> is an image gallery of the 100 Year Story of IIT BHU.</p>
+                            <!-- <button class="btn btn-primary" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button> -->
+                            <a class="btn btn-xl btn-outline-dark" href="https://alumni.iitbhu.ac.in/history1/" target="_blank">
+                                Visit Website
+                                <i class="fas fa-download fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
