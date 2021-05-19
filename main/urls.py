@@ -24,6 +24,7 @@ urlpatterns = [
     path("", homepage, name="homepage"),
     path('contact/', contact, name = 'contact'),
     path('blog/', blog, name = 'blog'),
+    path('about/', about, name = 'about'),
     path('myprojects/', myprojects, name = 'myprojects'),
     url(r'^getdata/', contact),
     url(r'^$', contact),
